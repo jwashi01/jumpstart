@@ -74,13 +74,31 @@ header {
 
 /* Main Section */
 
+/* Temperary image while slideshow is getting created */
+.imagescroll{
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-bike.jpg?raw=true");
+  background-color:gray;
+  background-size:cover;
+  height:40rem;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin-bottom:0rem;
+  padding-bottom:0rem;
+}
+
+
+
+/* Slideshow */
+
 .jumpstartslidesshowcontainer{
 
 }
 
-
+/*
 .jumpstartslideshow:nth-child(1) {
-  background-image: url("./resources/images/jumbotron-bike.jpg");
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-bike.jpg?raw=true");
   background-color:gray;
   background-size:cover;
   height:40rem;
@@ -93,8 +111,9 @@ header {
 }
 
 .jumpstartslideshow:nth-child(2) {
-  background-image: url("./resources/images/jumbotron-bike.jpg");
-  background-color:blue;
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-beer.jpg?raw=true");
+  background-size:cover;
+  background-color:gray;
   background-size:cover;
   height:40rem;
   text-align:center;
@@ -106,7 +125,7 @@ header {
 }
 
 .jumpstartslideshow:nth-child(3) {
-  background-image: url("./resources/images/jumbotron-bike.jpg");
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-flowers.jpg?raw=true");
   background-color:purple;
   background-size:cover;
   height:40rem;
@@ -119,7 +138,7 @@ header {
 }
 
 .jumpstartslideshow:nth-child(4) {
-  background-image: url("./resources/images/jumbotron-bike.jpg");
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-duffel.jpg?raw=true");
   background-color:green;
   background-size:cover;
   height:40rem;
@@ -129,7 +148,7 @@ header {
   align-items:center;
   margin-bottom:0rem;
   padding-bottom:0rem;
-}
+} */
 
 .Tagline {
   font-family: 'Monoton', cursive;
@@ -175,12 +194,18 @@ header {
 
 /* Featured Project Section */
 
+.FeaturedProjectSection {
+  padding-right:3rem;
+  padding-left:3rem;
+}
+
 .Featuredproject{
   font-size:1.7rem;
   font-weight:bold;
   color:#399bd1;
   margin-bottom:1.6rem;
   padding-left:2rem;
+  padding-top:2rem;
 }
 
 .FeaturedSection{
@@ -189,9 +214,16 @@ header {
 
 .Featuredprojectimage{
   width:50%;
+  height:20rem;
   padding-right:2rem;
   padding-left:2rem;
   overflow:hidden;
+}
+
+.featuredimage{
+  width:100%;
+  height:auto;
+  opacity:0.6;
 }
 
 .Featuredprojectimage img {
@@ -205,10 +237,6 @@ header {
   overflow:hidden;
 }
 
-.featuredimage{
-  width:100%;
-  height:auto;
-}
 
 .aboutfeatureprojectproductcategories{
   width:50%;
@@ -253,6 +281,8 @@ header {
 
 .ProjectsSection{
   margin-bottom:5.85rem;
+  padding-right:3rem;
+  padding-left:3rem;
 }
 
 .Projectsheader {
@@ -287,6 +317,17 @@ header {
   font-size:1rem;
 }
 
+.Project1imagesection img {
+  transition: transform .2s;
+}
+
+.Project1imagesection:hover img {
+  transform: scale(1);
+  width:97%;
+  height:auto;
+  overflow:hidden;
+}
+
 .project1image{
   width:95%;
   height:auto;
@@ -296,6 +337,17 @@ header {
 .Project2 {
   width:33%;
   padding-right:1.5rem;
+}
+
+.Project2imagesection img {
+  transition: transform .2s;
+}
+
+.Project2imagesection:hover img {
+  transform: scale(1);
+  width:97%;
+  height:auto;
+  overflow:hidden;
 }
 
 .project2image{
@@ -317,6 +369,17 @@ header {
 
 .Project3 {
   width:33%;
+}
+
+.Project3imagesection img {
+  transition: transform .2s;
+}
+
+.Project3imagesection:hover img {
+  transform: scale(1);
+  width:97%;
+  height:auto;
+  overflow:hidden;
 }
 
 .project3image{
