@@ -212,6 +212,36 @@ header {
   display:flex;
 }
 
+/*
+.parent{
+  width:50%;
+  height:20rem;
+  padding-right:2rem;
+  padding-left:2rem;
+  overflow:hidden;
+}
+
+.child {
+  width:100%;
+  height:100%;
+  opacity:0.6;
+  background-color:blue;
+  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/featured-project.png?raw=true");
+  background-position:center;
+  background-size:cover;
+  overflow:hidden;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.childtest {
+  width:100%;
+  height:100%;
+} */
+
 .Featuredprojectimage{
   width:50%;
   height:20rem;
@@ -220,12 +250,29 @@ header {
   overflow:hidden;
 }
 
+/*
+.Featuredprojectimage:hover .featuredimage,
+.Featuredprojectimage:focus .featuredimage {
+  transform: scale(1.2);
+  width:100%;
+  height:20rem;
+} */
+
+.featuredimage:hover,
+.featuredimage:focus {
+  transform:scale(1.2);
+  overflow:hidden;
+}
+
 .featuredimage{
   width:100%;
   height:auto;
   opacity:0.6;
+  align-items:center;
+  overflow:hidden;
 }
 
+/*
 .Featuredprojectimage img {
   transition: transform .2s;
 }
@@ -235,7 +282,7 @@ header {
   width:104%;
   height:auto;
   overflow:hidden;
-}
+} */
 
 
 .aboutfeatureprojectproductcategories{
@@ -317,6 +364,7 @@ header {
   font-size:1rem;
 }
 
+/*
 .Project1imagesection img {
   transition: transform .2s;
 }
@@ -326,11 +374,19 @@ header {
   width:97%;
   height:auto;
   overflow:hidden;
-}
+} */
 
 .project1image{
   width:95%;
   height:auto;
+  align-items:center;
+  overflow:hidden;
+}
+
+.project1image:hover,
+.project1image:focus {
+  transform:scale(1.1);
+  overflow:hidden;
 }
 
 
@@ -339,6 +395,7 @@ header {
   padding-right:1.5rem;
 }
 
+/*
 .Project2imagesection img {
   transition: transform .2s;
 }
@@ -348,11 +405,20 @@ header {
   width:97%;
   height:auto;
   overflow:hidden;
-}
+} */
+
 
 .project2image{
   width:95%;
   height:auto;
+  align-items:center;
+  overflow:hidden;
+}
+
+.project2image:hover,
+.project2image:focus {
+  transform: scale(1.1);
+  overflow:hidden;
 }
 
 .Project2Title{
@@ -371,6 +437,7 @@ header {
   width:33%;
 }
 
+/*
 .Project3imagesection img {
   transition: transform .2s;
 }
@@ -380,12 +447,21 @@ header {
   width:97%;
   height:auto;
   overflow:hidden;
-}
+} */
 
 .project3image{
   width:95%;
   height:auto;
+  align-items:center;
+  overflow:hidden;
 }
+
+.project3image:hover,
+.project3image:focus {
+  transform: scale(1.1);
+  overflow:hidden;
+}
+
 
 .Project3Title{
   font-size:1.3rem;
