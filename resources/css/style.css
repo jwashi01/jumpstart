@@ -27,10 +27,6 @@ header {
   font-weight:bold;
 }
 
-/*
-.navigation .Explore{
-  margin-right:1.5rem;
-} */
 
 .Explore a{
   color:#399bd1;
@@ -60,26 +56,23 @@ header {
   color:black;
 }
 
+.mobilenavigation{
+  display:none;
+}
 
-/*
-.navigation .Startaproject{
-  margin-right:1.5rem;
-}*/
-
-/*
-.navigation .Aboutuslink{
-  color:#4A4A4A;
-}*/
+.mobilelogo{
+  display:none;
+}
 
 
-/* Main Section */
+/* MAIN SECTION */
 
 /* Temperary image while slideshow is getting created */
 .imagescroll{
   background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/jumbotron-bike.jpg?raw=true");
   background-color:gray;
   background-size:cover;
-  height:40rem;
+  height:45rem;
   text-align:center;
   display:flex;
   flex-direction:column;
@@ -90,11 +83,8 @@ header {
 
 
 
-/* Slideshow */
-
-.jumpstartslidesshowcontainer{
-
-}
+/* SLIDESHOW */
+/*Slideshow being worked on*/
 
 /*
 .jumpstartslideshow:nth-child(1) {
@@ -154,18 +144,20 @@ header {
   font-family: 'Monoton', cursive;
   font-size:7.1rem;
   color:white;
-  text-shadow:-1px -1px 0 #000;
   margin-bottom:0rem;
   padding-bottom:0rem;
   opacity:0.8rem;
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .Taglinemessage{
-  width:51.3rem;
   color:white;
+  width:70%;
+  font-size:1.5rem;
   padding-bottom:2.8rem;
   font-family: 'Open Sans', sans-serif;
   font-weight:lighter;
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .JumpIn{
@@ -195,8 +187,8 @@ header {
 /* Featured Project Section */
 
 .FeaturedProjectSection {
-  padding-right:3rem;
-  padding-left:3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .Featuredproject{
@@ -204,7 +196,6 @@ header {
   font-weight:bold;
   color:#399bd1;
   margin-bottom:1.6rem;
-  padding-left:2rem;
   padding-top:2rem;
 }
 
@@ -212,57 +203,15 @@ header {
   display:flex;
 }
 
-/*
-.parent{
-  width:50%;
-  height:20rem;
-  padding-right:2rem;
-  padding-left:2rem;
-  overflow:hidden;
-}
-
-.child {
-  width:100%;
-  height:100%;
-  opacity:0.6;
-  background-color:blue;
-  background-image: url("https://github.com/jwashi01/jumpstart/blob/master/resources/images/featured-project.png?raw=true");
-  background-position:center;
-  background-size:cover;
-  overflow:hidden;
-}
-
-.parent:hover .child,
-.parent:focus .child {
-  transform: scale(1.2);
-}
-
-.childtest {
-  width:100%;
-  height:100%;
-} */
 
 .Featuredprojectimage{
   width:50%;
   height:20rem;
+  overflow:hidden;
   padding-right:2rem;
-  padding-left:2rem;
-  overflow:hidden;
 }
 
-/*
-.Featuredprojectimage:hover .featuredimage,
-.Featuredprojectimage:focus .featuredimage {
-  transform: scale(1.2);
-  width:100%;
-  height:20rem;
-} */
 
-.featuredimage:hover,
-.featuredimage:focus {
-  transform:scale(1.2);
-  overflow:hidden;
-}
 
 .featuredimage{
   width:100%;
@@ -271,18 +220,6 @@ header {
   align-items:center;
   overflow:hidden;
 }
-
-/*
-.Featuredprojectimage img {
-  transition: transform .2s;
-}
-
-.Featuredprojectimage:hover img {
-  transform: scale(1);
-  width:104%;
-  height:auto;
-  overflow:hidden;
-} */
 
 
 .aboutfeatureprojectproductcategories{
@@ -328,8 +265,8 @@ header {
 
 .ProjectsSection{
   margin-bottom:5.85rem;
-  padding-right:3rem;
-  padding-left:3rem;
+  padding-right:0rem; /*3rem*/
+  padding-left:0rem;  /*3rem*/
 }
 
 .Projectsheader {
@@ -362,19 +299,9 @@ header {
 
 .Project1Summary{
   font-size:1rem;
+  width:90%;
 }
 
-/*
-.Project1imagesection img {
-  transition: transform .2s;
-}
-
-.Project1imagesection:hover img {
-  transform: scale(1);
-  width:97%;
-  height:auto;
-  overflow:hidden;
-} */
 
 .project1image{
   width:95%;
@@ -383,41 +310,15 @@ header {
   overflow:hidden;
 }
 
-.project1image:hover,
-.project1image:focus {
-  transform:scale(1.1);
-  overflow:hidden;
-}
-
-
 .Project2 {
   width:33%;
   padding-right:1.5rem;
 }
 
-/*
-.Project2imagesection img {
-  transition: transform .2s;
-}
-
-.Project2imagesection:hover img {
-  transform: scale(1);
-  width:97%;
-  height:auto;
-  overflow:hidden;
-} */
-
-
 .project2image{
   width:95%;
   height:auto;
   align-items:center;
-  overflow:hidden;
-}
-
-.project2image:hover,
-.project2image:focus {
-  transform: scale(1.1);
   overflow:hidden;
 }
 
@@ -431,34 +332,17 @@ header {
 
 .Project2Summary{
   font-size:1rem;
+  width:90%;
 }
 
 .Project3 {
   width:33%;
 }
 
-/*
-.Project3imagesection img {
-  transition: transform .2s;
-}
-
-.Project3imagesection:hover img {
-  transform: scale(1);
-  width:97%;
-  height:auto;
-  overflow:hidden;
-} */
-
 .project3image{
   width:95%;
   height:auto;
   align-items:center;
-  overflow:hidden;
-}
-
-.project3image:hover,
-.project3image:focus {
-  transform: scale(1.1);
   overflow:hidden;
 }
 
@@ -473,6 +357,7 @@ header {
 
 .Project3Summary{
   font-size:1rem;
+  width:90%;
 }
 
 /* Footer Section */
@@ -521,4 +406,220 @@ footer {
   text-decoration: none;
   color:white;
   font-size:1.3rem;
+}
+
+@media only screen and (max-width: 1020px){
+  .Taglinemessage{
+    width:90%;
+  }
+
+}
+
+@media only screen and (max-width: 768px){
+
+  .Going {
+    display:block;
+    margin:0rem;
+    padding:0rem;
+  }
+
+.Tagline {
+  font-size:5rem;
+  padding-top:2rem;
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.Taglinemessage{
+  font-size:1.2rem;
+  width:60%;
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.FeaturedProjectSection {
+    padding-right:0rem;
+    padding-left:0rem;
+  }
+
+  .Featuredproject{
+    font-size:1.7rem;
+    font-weight:bold;
+    color:#399bd1;
+    margin-bottom:1.6rem;
+    padding-top:2rem;
+  }
+
+.FeaturedSection{
+    display:flex;
+    flex-direction:column;
+}
+
+.Featuredprojectimage{
+  width:95%;
+  height:auto;
+  padding-right:0rem;
+  padding-left:0rem;
+  margin-right:0rem;
+  overflow:hidden;
+}
+
+.featuredimage{
+  width:100%;
+  height:auto;
+  opacity:0.6;
+  /*align-items:center;*/
+  overflow:hidden;
+}
+
+.aboutfeatureprojectproductcategories{
+  width:100%;
+  padding-top:2rem;
+}
+
+.Aboutfeaturedproject{
+  width:50%;
+  padding-left:0rem;
+}
+
+.ProductCategoriesSection{
+  width:50%;
+}
+
+.ProjectsSection{
+  padding:0;
+  margin:0;
+}
+
+.Projects {
+  display:flex;
+  flex-direction:column;
+}
+
+.Project1 {
+  width:100%;
+}
+
+.Project2{
+    width:100%;
+    padding-top:2rem;
+  }
+
+.Project3{
+  width:100%;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+
+.IdeaGenerator{
+  width:90%;
+}
+
+/*Footer*/
+.Thinkideas{
+  width:90%;
+}
+
+}
+
+@media only screen and (max-width: 480px){
+.imagescroll{
+  background-position:center;
+}
+
+
+ .Tagline{
+    font-size: 3rem;
+    padding-top: 4rem;
+ }
+
+.JumpIn{
+  padding: 0.85rem 2rem;
+}
+
+.JumpInlink{
+  font-size:1rem;
+}
+
+ .Going {
+   display:block;
+   margin:0rem;
+   padding:0rem;
+ }
+
+  .Taglinemessage{
+    font-size:1.2rem;
+    width:90%;
+  }
+
+  /*Main*/
+
+.FeaturedProjectSection {
+    display: block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.Featuredproject {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #399bd1;
+  margin-bottom: 1.6rem;
+  padding-top: 2rem;
+}
+
+.Featuredprojectimage {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.aboutfeatureprojectproductcategories{
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.Aboutfeaturedproject {
+    width: 100%;
+}
+
+.ProductCategoriesSection {
+    width: 100%;
+}
+
+.FeaturedSummary {
+    width: 95%;
+}
+
+.ProductCategories{
+  padding-left:0rem;
+  font-size:1.5rem;
+  padding-top:2rem;
+}
+
+.Productlist{
+  padding-left:0rem;
+}
+
+  /*Footer*/
+
+footer {
+  height:30rem;
+}
+
+.Thinkideas{
+  font-size:1.5rem;
+  padding-top:6rem;
+}
+
+.LearnMore {
+  padding: 0.85rem 2rem;
+}
+
+.learnmorelink{
+  font-size:1rem;
+}
+
+
 }
