@@ -56,6 +56,10 @@ header {
   color:black;
 }
 
+.mobileheader{
+  display:none;
+}
+
 .mobilenavigation{
   display:none;
 }
@@ -423,6 +427,42 @@ footer {
     padding:0rem;
   }
 
+header{
+  height:6.5rem;
+}
+
+.header {
+  display:flex;
+  flex-direction:column;
+  height:3rem;
+  margin-right:0rem;
+  margin-left:0rem;
+}
+
+.navigation{
+  padding-bottom:0.25rem;
+  display:flex;
+  flex-direction:column;
+  text-align:left;
+  width:100%;
+}
+
+.Explore{
+  padding-bottom:0.5rem;
+}
+
+.Startaproject{
+  padding-bottom:0.5rem;
+}
+
+.Aboutus{
+  padding-bottom:0.5rem;
+}
+
+.logo{
+ display:none;
+}
+
 .Tagline {
   font-size:5rem;
   padding-top:2rem;
@@ -525,6 +565,9 @@ footer {
   background-position:center;
 }
 
+.logo{
+  padding-bottom:1rem;
+}
 
  .Tagline{
     font-size: 3rem;
